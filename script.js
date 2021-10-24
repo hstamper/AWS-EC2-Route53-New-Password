@@ -10,6 +10,28 @@ function generatePassword() {
         window.alert("You need to provide a valid answer! Please try again.");
         return generatePassword();
     }
+    var confirmlowecase = window.confirm ("Click ok to confirm including lowercase characters");
+    if (confirmlowecase) {
+
+    }
+
+    var confirmuppercase = window.confirm ("Click ok to confirm including uppercase characters");
+    if (confirmuppercase) {
+
+    }
+
+    var confirmspecial = window.confirm ("Click ok to confirm including special characters");
+    if (confirmspecial) {
+
+    }
+
+    var confirmnumeric = window.confirm ("Click ok to confirm including numeric characters");
+    if (confirmnumeric) {
+
+    }
+
+
+
 
 
 
