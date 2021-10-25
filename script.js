@@ -1,47 +1,38 @@
 // Assignment code here
 
 
+
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
+var alphaLower = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+var alphaUpper = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+
+var confirmLength = "";
+var confirmSpecialCharacter;
+var confirmNumericCharacter;
+var confirmUppercase;
+var confirmLowercase;
+
 function generatePassword() {
-    var promptLength = window.prompt ("How many characters would you like in your password?");
-    if (promptLength < 8 || promptLength > 128) {
-        window.alert("You need to provide a valid answer! Please try again.");
-        return generatePassword();
-    }
-    var confirmlowecase = window.confirm ("Click ok to confirm including lowercase characters");
-    if (confirmlowecase) { function getRandomLower() {
-        return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
-    }
-console.log(getRandomLower());
-    }
+var confirmLenght = (prompt("How many characters would you like your password to contain?"));
 
-    var confirmuppercase = window.confirm ("Click ok to confirm including uppercase characters");
-    if (confirmuppercase) { function getRandomUpper() {
-        return String.fromCharCode(Math.floor(math.random() * 26) + 65);
-    }
+while(confirmLength <= 7 || confirmLength >=129) {
+    alert("Password must be between 8-128 characters Try again");
+    var confirmLenght = (prompt("How many characters would you like your password to contain?"));
+}
 
-    }    
 
-    var confirmnumeric = window.confirm ("Click ok to confirm including numeric characters");
-    if (confirmnumeric)  { function getRandomNumber() {
-        return String.fromCharCode(Math.floor(math.random() * 10) + 48);
-    }
 
-    }
-
-    var confirmspecial = window.confirm ("Click ok to confirm including special characters");
-    if (confirmspecial) { function getRandomSpecial() {
-        const special = "!#$%&'()*+,-./:;<=>?@[]_{}|~";
-       return special[Math.floor(Math.random() * special.length)];
-    }
-    }
+}
+    
+    
+    
     
     //Step 3 Generate password based on Criteria
     //Step 3 Display generated password
     //return "Generated password will go here!";
-}
+
 
 // Write password to the #password input
 function writePassword() {
