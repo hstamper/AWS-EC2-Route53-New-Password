@@ -16,13 +16,17 @@ var confirmLowercase;
 
 function generatePassword() {
 var confirmLenght = (prompt("How many characters would you like your password to contain?"));
+ 
+ if (confirmLength <= 7 || confirmLength >=129) {   alert("Password must be between 8-128 characters Try again");
+ var confirmLenght = (prompt("How many characters would you like your password to contain?"));
 
-while(confirmLength <= 7 || confirmLength >=129) {
-    alert("Password must be between 8-128 characters Try again");
-    var confirmLenght = (prompt("How many characters would you like your password to contain?"));
 }
+    
 
 
+var confirmNumericCharacter = confirm("Click ok to confirm including numeric characters");
+var confirmLowercase = confirm("Click Ok to confirm including lowercase characters");
+var confirmUppercase = confirm("Click ok to confirm including uppercase characters");
 
 }
     
