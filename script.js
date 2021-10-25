@@ -11,42 +11,36 @@ function generatePassword() {
         return generatePassword();
     }
     var confirmlowecase = window.confirm ("Click ok to confirm including lowercase characters");
-    if (confirmlowecase) {
-
+    if (confirmlowecase) { function getRandomLower() {
+        return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+    }
+console.log(getRandomLower());
     }
 
     var confirmuppercase = window.confirm ("Click ok to confirm including uppercase characters");
-    if (confirmuppercase) {
+    if (confirmuppercase) { function getRandomUpper() {
+        return String.fromCharCode(Math.floor(math.random() * 26) + 65);
+    }
+
+    }    
+
+    var confirmnumeric = window.confirm ("Click ok to confirm including numeric characters");
+    if (confirmnumeric)  { function getRandomNumber() {
+        return String.fromCharCode(Math.floor(math.random() * 10) + 48);
+    }
 
     }
 
     var confirmspecial = window.confirm ("Click ok to confirm including special characters");
-    if (confirmspecial) {
-
+    if (confirmspecial) { function getRandomSpecial() {
+        const special = "!#$%&'()*+,-./:;<=>?@[]_{}|~";
+       return special[Math.floor(Math.random() * special.length)];
     }
-
-    var confirmnumeric = window.confirm ("Click ok to confirm including numeric characters");
-    if (confirmnumeric) {
-
     }
-
-
-
-
-
-
-    //Step 1 Prompt the user for the password criteria
-    //a. Password Lenght 8 < 128 
-    //b. Lowercase, uppercase, Special Characters
-
-    //Step 2 Validate the input 
+    
     //Step 3 Generate password based on Criteria
-
-
-
-
     //Step 3 Display generated password
-    return "Generated password will go here!";
+    //return "Generated password will go here!";
 }
 
 // Write password to the #password input
@@ -58,5 +52,11 @@ function writePassword() {
 
 }
 
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+
+
+
+
