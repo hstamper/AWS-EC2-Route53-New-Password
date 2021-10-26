@@ -28,22 +28,19 @@ while (confirmLength < 8 || confirmLength > 128) {
 var confirmLength = (prompt("How many characters would you like your password to contain?"));   
 
 }
-
-
-
- var confirmNumericCharacter = confirm("Click ok to confirm including numeric characters");
-
-
+var confirmNumericCharacter = confirm("Click ok to confirm including numeric characters");
 
 
 var confirmLowercase = confirm("Click Ok to confirm including lowercase characters");
+
+
 var confirmUppercase = confirm("Click ok to confirm including uppercase characters");
 
+var confirmSpecialCharacter =confirm("Click ok to confirm including special characters");
+
+
 }
-    
-    
-    
-    
+
     //Step 3 Generate password based on Criteria
     //Step 3 Display generated password
     //return "Generated password will go here!";
