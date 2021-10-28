@@ -36,10 +36,23 @@ var confirmLowercase = confirm("Click Ok to confirm including lowercase characte
 
 var confirmUppercase = confirm("Click ok to confirm including uppercase characters");
 
+
 var confirmSpecialCharacter =confirm("Click ok to confirm including special characters");
 
 
 }
+
+var passwordCharacters = []
+
+if (confirmSpecialCharacter) {
+    passwordCharacters =passwordCharacters.concat(special)
+}
+
+if (confirmNumericCharacter) {
+    passwordCharacters = passwordCharacters.concat(numeric)
+}
+
+
 
     //Step 3 Generate password based on Criteria
     //Step 3 Display generated password
