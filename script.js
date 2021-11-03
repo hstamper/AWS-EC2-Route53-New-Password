@@ -71,16 +71,21 @@ if (confirmUppercase) {
     passwordCharacters = passwordCharacters.concat(alphaUpper)
 }
 
+var randomPassword = ""
+
 for (var i = 0; i < confirmLength; i++) {
     randomPassword = randomPassword + passwordCharacters[Math.floor(Math.random()*
-    passwordCharacters.length)]
+    passwordCharacters.length)];
 }
 
+return randomPassword; 
+
 }
 
 
+     
 
-return passwordCharacters; 
+
 
     //Step 3 Generate password based on Criteria
     //Step 3 Display generated password
@@ -93,6 +98,8 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
+
+  
 
 }
 
