@@ -28,6 +28,16 @@ while (confirmLength < 8 || confirmLength > 128) {
 var confirmLength = (prompt("How many characters would you like your password to contain?"));   
 
 }
+
+// function checkConfirmLength() {
+//     if (confirmLength < 8 || confirmLength >128){
+//         alert("Password must be between 8-128 characters Try again");
+//         var confirmLength = (prompt("How many characters would you like your password to contain?"));
+//     }
+// }
+// const = constant variables not changeable
+// let = variables that might be changed
+
 var confirmNumericCharacter = confirm("Click ok to confirm including numeric characters");
 
 
@@ -40,19 +50,33 @@ var confirmUppercase = confirm("Click ok to confirm including uppercase characte
 var confirmSpecialCharacter =confirm("Click ok to confirm including special characters");
 
 
-}
 
 var passwordCharacters = []
 
 if (confirmSpecialCharacter) {
     passwordCharacters =passwordCharacters.concat(special)
+    // take the special characters and adding them to passwordCharacters
 }
 
 if (confirmNumericCharacter) {
     passwordCharacters = passwordCharacters.concat(numeric)
+    // take the numeric characters and adding them to passwordCharacters
+}
+
+if (confirmLowercase) {
+    passwordCharacters = passwordCharacters.concat(alphaLower)
+}
+
+if (confirmUppercase) {
+    passwordCharacters = passwordCharacters.concat(alphaUpper)
 }
 
 
+}
+
+
+
+return passwordCharacters; 
 
     //Step 3 Generate password based on Criteria
     //Step 3 Display generated password
