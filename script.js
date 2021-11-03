@@ -71,6 +71,10 @@ if (confirmUppercase) {
     passwordCharacters = passwordCharacters.concat(alphaUpper)
 }
 
+for (var i = 0; i < confirmLength; i++) {
+    randomPassword = randomPassword + passwordCharacters[Math.floor(Math.random()*
+    passwordCharacters.length)]
+}
 
 }
 
