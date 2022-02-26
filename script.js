@@ -82,17 +82,6 @@ return randomPassword;
 
 }
 
-
-     
-
-
-
-    //Step 3 Generate password based on Criteria
-    //Step 3 Display generated password
-    //return "Generated password will go here!";
-
-
-// Write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
