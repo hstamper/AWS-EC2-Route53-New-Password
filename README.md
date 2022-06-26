@@ -1,14 +1,19 @@
 # New-Password
 
 ## Purpose
-This application is designed to allow the end user to generate a random password based on their preferred selection of character length, numerical, special, lowercase, and uppercase characters. 
+
+This application is designed to allow the end user to generate a random password based on their preferred selection of character length, numerical, special, lowercase, and uppercase characters.
 
 ## Built With
-* HTML
-* CSS
-* JavaScript
+
+- HTML
+- CSS
+- JavaScript
+- AWS - EC2
+- AWS - Route53
 
 ## Instructions
+
 WHEN you click the button to generate a password
 THEN you're presented with a series of prompts for password criteria
 WHEN prompted for password criteria
@@ -25,12 +30,14 @@ WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 
 ## Website
+
 https://hstamper.github.io/New-Password/
 
 ## Contribution
+
 Made/Created by Hilliard E. Stamper III
 
-## 2021 Hilliard E. Stamper III - New Password 
+## 2021 Hilliard E. Stamper III - New Password
 
 ![image](https://user-images.githubusercontent.com/91726280/155820350-7ebe7e71-2953-4b2f-955f-53aad8437ac9.png)
 
